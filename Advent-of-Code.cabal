@@ -49,6 +49,7 @@ library
       Days.Day24
       Days.Day25
       Program.RunDay
+      Program.TestDay
       Util.BinTree
       Util.Coord
       Util.Field
@@ -86,11 +87,13 @@ library
     , containers
     , extra
     , formatting
+    , hspec
     , http-conduit
     , matrix
     , mod
-    , mtl
     , split
+    , time
+    , transformers
     , unordered-containers
     , vector
   default-language: Haskell2010
@@ -112,11 +115,55 @@ executable AOC-exe
     , containers
     , extra
     , formatting
+    , hspec
     , http-conduit
     , matrix
     , mod
-    , mtl
     , split
+    , time
+    , transformers
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+test-suite AOC-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_Advent_of_Code
+  hs-source-dirs:
+      test
+  default-extensions:
+      ApplicativeDo
+      TupleSections
+      NumericUnderscores
+      TypeSynonymInstances
+      FlexibleInstances
+      ScopedTypeVariables
+      DeriveGeneric
+      DeriveAnyClass
+      LambdaCase
+      DeriveFunctor
+      DeriveFoldable
+      RecordWildCards
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Advent-of-Code
+    , base >=4.7 && <5
+    , bifunctors
+    , bytestring
+    , clock
+    , composition
+    , containers
+    , extra
+    , formatting
+    , hspec
+    , http-conduit
+    , matrix
+    , mod
+    , split
+    , time
+    , transformers
     , unordered-containers
     , vector
   default-language: Haskell2010
