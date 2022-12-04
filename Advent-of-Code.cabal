@@ -3,8 +3,6 @@ cabal-version: 1.12
 -- This file has been generated from package.yaml by hpack version 0.35.0.
 --
 -- see: https://github.com/sol/hpack
---
--- hash: 276783f487d9af87078a981d235497312264c2b1548963658346a89d64166858
 
 name:           Advent-of-Code
 version:        0.1.0.0
@@ -81,11 +79,16 @@ library
       TypeApplications
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , bytestring
+    , clock
+    , composition
     , containers
     , extra
+    , formatting
     , http-conduit
     , matrix
+    , mod
     , mtl
     , split
     , unordered-containers
@@ -102,11 +105,16 @@ executable AOC-exe
   build-depends:
       Advent-of-Code
     , base >=4.7 && <5
+    , bifunctors
     , bytestring
+    , clock
+    , composition
     , containers
     , extra
+    , formatting
     , http-conduit
     , matrix
+    , mod
     , mtl
     , split
     , unordered-containers

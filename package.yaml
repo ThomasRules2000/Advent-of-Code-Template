@@ -30,6 +30,11 @@ dependencies:
 - time
 - http-conduit
 - bytestring
+- mod
+- composition
+- bifunctors
+- clock
+- formatting
 
 library:
   source-dirs: src
