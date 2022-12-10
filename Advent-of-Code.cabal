@@ -57,6 +57,7 @@ library
       Util.Map
       Util.NoQuotes
       Util.Pair
+      Util.Picture
       Util.Set
       Util.Tile
       Util.Util
