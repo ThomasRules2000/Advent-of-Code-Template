@@ -36,6 +36,12 @@ dependencies:
 - clock
 - formatting
 - hspec
+- lens
+- tuple
+- heap
+- attoparsec
+- parser-combinators
+- primitive
 
 library:
   source-dirs: src
