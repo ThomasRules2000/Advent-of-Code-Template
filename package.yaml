@@ -70,6 +70,20 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - Advent-of-Code
+    default-extensions:
+      - ApplicativeDo
+      - TupleSections
+      - NumericUnderscores
+      - TypeSynonymInstances
+      - FlexibleInstances
+      - ScopedTypeVariables
+      - DeriveGeneric
+      - DeriveAnyClass
+      - LambdaCase 
+      - DeriveFunctor
+      - DeriveFoldable
+      - RecordWildCards
+      - TypeApplications
 
 tests:
   AOC-test:

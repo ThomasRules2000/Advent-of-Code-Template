@@ -53,6 +53,7 @@ library
       Util.BinTree
       Util.Coord
       Util.Cycle
+      Util.Debug
       Util.Field
       Util.HexTile
       Util.Map
@@ -113,6 +114,20 @@ executable AOC-exe
       Paths_Advent_of_Code
   hs-source-dirs:
       app
+  default-extensions:
+      ApplicativeDo
+      TupleSections
+      NumericUnderscores
+      TypeSynonymInstances
+      FlexibleInstances
+      ScopedTypeVariables
+      DeriveGeneric
+      DeriveAnyClass
+      LambdaCase
+      DeriveFunctor
+      DeriveFoldable
+      RecordWildCards
+      TypeApplications
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       Advent-of-Code
