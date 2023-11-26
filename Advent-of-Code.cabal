@@ -23,6 +23,7 @@ source-repository head
 
 library
   exposed-modules:
+      Config.Config
       Days.Day01
       Days.Day02
       Days.Day03
